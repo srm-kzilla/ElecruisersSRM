@@ -1,0 +1,274 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,800,900&display=swap');
+
+
+/* Globals */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100%;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif !important;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0 !important;
+    line-height: 1 !important;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.kz-title-bold{
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 64px;
+}
+
+.kz-title-bold::after{
+    content: '';
+    width: 92px;
+    height: 4px;
+    background-color: #000;
+    bottom: -16px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.kz-section{
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+}
+
+/* Icons */
+.kz-icon{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    color: #fff;
+}
+
+.kz-icon-round{
+    border-radius: 50%;
+}
+
+.kz-icon-facebook{
+    background-color: #1877F2;
+    -webkit-mask:  url('icons/facebook-brands.svg') no-repeat 50% 50%;
+    mask: url('icons/facebook-brands.svg') no-repeat 50% 50%;
+}
+
+.kz-icon-instagram{
+    background-color: #f46f30;
+    -webkit-mask:  url('icons/instagram-brands.svg') no-repeat 50% 50%;
+    mask: url('icons/instagram-brands.svg') no-repeat 50% 50%;
+}
+
+.kz-icon-linkedin{
+    background-color: #007BB5;
+    -webkit-mask:  url('icons/linkedin-in-brands.svg') no-repeat 50% 50%;
+    mask: url('icons/linkedin-in-brands.svg') no-repeat 50% 50%;
+}
+
+/* <<<<<index.html>>>>>> */
+/*-------------section1-------------*/
+.hero-navbar{
+    position: relative;
+}
+.headbar{
+    position: relative;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+.headbar img{
+    width: 30px;
+    height: 30px;
+
+}
+
+.headbar p.kz-current-section{
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0 !important;
+    margin-left: 40px;
+    font-size: 0.95rem;
+}
+
+.headbar h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 0 !important;
+}
+
+.headbar h2::before{
+    content: '';
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    height: 6px;
+    width: 16px;
+    position: absolute;
+    top: -12px;
+    right: 8px;
+    border-color: #202020;
+    transform: rotate(-30deg);
+}
+
+.headbar h2::after{
+    content: '';
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    height: 6px;
+    width: 16px;
+    position: absolute;
+    bottom: -12px;
+    left: 8px;
+    border-color: #202020;
+    transform: rotate(-30deg);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+}
+.hero img{
+    margin-top: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 70%; 
+}
+.kz-skewbg{
+    position: absolute;
+    top: -15%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: skewY(-8deg);
+    background-color: #fafafa;
+    z-index: -1;
+}
+.kz-section-skewbg{
+    position: absolute;
+    top: -15%;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    transform: skewY(-8deg);
+    background-color: #fafafa;
+    z-index: -1;
+}
+.kz-section-vision{
+    position: relative;
+}
+.kz-section-vision-content p{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.kz-section-vision-content img{
+    height: auto;
+    width: 70%;
+    padding: 48px;
+}
+.winnerlistleft{
+    padding: 30px;
+}
+.winnerlistleft ul{
+    list-style: none;
+}
+.competition{
+    font-weight: 800;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    color: #000;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.c_posn{
+    font-weight: 800;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: #90cfcb;
+    padding-bottom: 16px;
+}
+.kz-video{
+    padding: 20px;
+}
+.kz-video iframe{
+    border-radius: 10px;
+}
+.kz-writeus-content{
+    padding: 30px;
+}
+
+/* ============================= */
+/*              TEAM             */
+/* ============================= */
+.kz-section-team img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 999;
+    position: relative;
+}
+
+.kz-section-team .kz-team-member .kz-content{
+    padding: 8px;
+    background-color: #202020;
+    border-radius: 8px;
+    width: 60%;
+    margin: 0 auto;
+    transform: translateY(-40px);
+    z-index: 0;
+    color: #fafafa;
+    line-height: 1.4;
+}
+
+.kz-section-team .kz-team-member .kz-content > div{
+    margin-top: 48px;
+}
+
+.kz-section-team .kz-team-member .kz-content div p:nth-child(1){
+    margin-bottom: 6px !important;
+}
+
+.kz-section-team .kz-team-member .kz-content div p:nth-child(2){
+    font-size: 0.9rem;
+    color: #fafafa;
+}
+
+.kz-section-team .kz-team-member .kz-content div .kz-social{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.kz-section-team .kz-team-member .kz-content div .kz-social a{
+    display: inline-block;
+}

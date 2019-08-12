@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Elecruisers SRM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="res/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <section class="hero-navbar">
+        <div class="kz-skewbg"></div>
+        <div class="container-fluid">
+            <div class="row headbar">
+                <img src="res/img/icons/navgrid.svg" />
+                <p class="kz-current-section">Team</p>
+                <h2>The Elecruisers</h2>
+            </div>
+            <div class="row kz-section kz-section-team">
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const team = [
+            {
+                name: "yo",
+                designation: "yo",
+                photo: "",
+                linkedin: "",
+                instagram: "yo"
+            }
+        ]
+
+        team.forEach(member => {
+
+            const facebook = member.facebook != undefined ? `<a href="${member.facebook}"><span class="kz-icon kz-icon-round kz-icon-facebook"></span></a>` : "";
+            const instagram = member.instagram != undefined ? `<a href="${member.instagram}"><span class="kz-icon kz-icon-instagram"></span></a>` : "";
+            const linkedin = member.linkedin != undefined ? `<a href="${member.linkedin}"><span class="kz-icon kz-icon-linkedin"></span></a>` : "";
+
+            const snippet = `
+            <div class="kz-team-member col-12 col-md-4 col-lg-3">
+                    <img src="res/img/team/${member.photo}" />
+                    <div class="kz-content text-center">
+                        <div>
+                            <p>${member.name}</p>
+                            <p>${member.designation}</p>
+                            <div class="kz-social">
+                                ${facebook}
+                                ${instagram}
+                                ${linkedin}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `
+
+            const node = htmlToElement(snippet)
+            document.querySelector('.kz-section-team').appendChild(node)
+        })
+
+        function htmlToElement(html) {
+            var template = document.createElement('template');
+            html = html.trim(); // Never return a text node of whitespace as the result
+            template.innerHTML = html;
+            return template.content.firstChild;
+        }
+    </script>
+
+</body>
+
+</html>

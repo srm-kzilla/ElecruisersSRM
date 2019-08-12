@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Elecruisers SRM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="res/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <section class="hero-navbar">
+        <div class="kz-skewbg"></div>
+        <div class="container-fluid">
+            <div class="row headbar">
+                <img src="res/img/icons/navgrid.svg" />
+                <p class="kz-current-section">Developers</p>
+                <h2>The Elecruisers</h2>
+            </div>
+            <div class="row kz-section kz-section-team">
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const team = [
+            {
+                name: "Aakash Sharma",
+                photo: "aakash.jpg",
+                facebook: "https://www.facebook.com/profile.php?id=100008554054285",
+                instagram: "https://www.instagram.com/9267aakashsharma/",
+                linkedin: "https://www.linkedin.com/in/aakash-sharma-7b271a167"
+            },
+            {
+                name: "Aarushi Saraswat",
+                photo: "aarushi.jpg",
+                facebook: "https://www.facebook.com/aarushi.saraswat.33",
+                instagram: "https://www.instagram.com/99_aarushi/",
+                linkedin: "linkedin.com/in/aarushi-saraswat"
+            },
+            {
+                name: "Dhruvil Shah",
+                photo: "dhruvil.jpg",
+                instagram: "https://www.instagram.com/dhruvil_shah_2000/",
+                linkedin: "https://www.linkedin.com/in/dhruvil-shah-5506b416b/"
+            },
+            {
+                name: "Ishan Chhabra",
+                photo: "ishan.jpg",
+                facebook: "https://www.facebook.com/ish2gud",
+                instagram: "https://www.instagram.com/chh_abracadabra/",
+                linkedin: "linkedin.com/in/ishan-chhabra"
+            },
+            {
+                name: "Janaswamy Samyukta",
+                photo: "samyukta.jpg",
+                facebook: "https://www.facebook.com/samyuktha.janaswamy",
+                instagram: "https://www.instagram.com/samyukthajanaswamy/",
+                linkedin: "linkedin.com/janaswamy-samyukta"
+            },
+            {
+                name: "Nithesh P",
+                photo: "nithesh.jpg",
+                linkedin: "https://www.linkedin.com/in/nithesh-p-474b95187"
+            },
+            {
+                name: "Rishika Sharma",
+                photo: "rishika.jpg",
+                facebook: "https://www.facebook.com/kiya.sen.31",
+                instagram: "https://www.instagram.com/_t_slash_/",
+            },
+            {
+                name: "Shrey Sachdeva",
+                photo: "shrey.jpg",
+                instagram: "www.instagram.com/shrey_sachdeva",
+                linkedin: "https://www.linkedin.com/in/shrey-sachdeva-7a456870"
+            },
+            {
+                name: "Sriram Kailasam",
+                photo: "sriram.jpg",
+                facebook: "https://www.facebook.com/sriram.iyer.182",
+                instagram: "https://www.instagram.com/sriram_kailasam/",
+                linkedin: "https://www.linkedin.com/in/sriram-kailasam"
+            },
+            {
+                name: "Vanshika Bhojnagarwala",
+                photo: "vanshikabhojnagarwala.jpg",
+                facebook: "https://m.facebook.com/vanshika.bhojnagarwala.9",
+                instagram: "https://www.instagram.com/vanshika_703/",
+                linkedin: "https://www.linkedin.com/in/vanshika-bhojnagarwala-3308b4183"
+            },
+            {
+                name: "Vanshika Jalan",
+                photo: "vanshikajalan.jpg",
+                instagram: "https://www.instagram.com/ajeebnajeeb_",
+                linkedin: "https://www.linkedin.com/in/vanshikajalan26"
+            }
+        ]
+
+        team.forEach(member => {
+
+            const facebook = member.facebook != undefined ? `<a href="${member.facebook}"><span class="kz-icon kz-icon-round kz-icon-facebook"></span></a>` : "";
+            const instagram = member.instagram != undefined ? `<a href="${member.instagram}"><span class="kz-icon kz-icon-instagram"></span></a>` : "";
+            const linkedin = member.linkedin != undefined ? `<a href="${member.linkedin}"><span class="kz-icon kz-icon-linkedin"></span></a>` : "";
+
+            const snippet = `
+            <div class="kz-team-member col-12 col-md-4 col-lg-3">
+                    <img src="res/img/developers/${member.photo}" />
+                    <div class="kz-content text-center">
+                        <div>
+                            <p>${member.name}</p>
+                            <div class="kz-social">
+                                ${facebook}
+                                ${instagram}
+                                ${linkedin}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `
+
+            const node = htmlToElement(snippet)
+            document.querySelector('.kz-section-team').appendChild(node)
+        })
+
+        function htmlToElement(html) {
+            var template = document.createElement('template');
+            html = html.trim(); // Never return a text node of whitespace as the result
+            template.innerHTML = html;
+            return template.content.firstChild;
+        }
+    </script>
+
+</body>
+
+</html>
