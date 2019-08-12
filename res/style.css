@@ -59,10 +59,23 @@ p, h1, h2, h3, h4, h5, h6{
     height: 16px;
     display: inline-block;
     color: #fff;
+    transition: transform 0.2s;
+}
+
+.kz-icon:hover{
+    transform: scale(1.1);
 }
 
 .kz-icon-round{
     border-radius: 50%;
+}
+
+.kz-icon-cross{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    fill: #fafafa;
+    color: #fafafa;
 }
 
 .kz-icon-facebook{
@@ -88,16 +101,62 @@ p, h1, h2, h3, h4, h5, h6{
 .hero-navbar{
     position: relative;
 }
+
 .headbar{
     position: relative;
     padding: 16px;
     display: flex;
     align-items: center;
 }
-.headbar img{
-    width: 30px;
-    height: 30px;
 
+.headbar .kz-drawer{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+	height: 0;
+  	opacity: 0;
+	overflow: hidden;
+	transition: all 400ms ease-in-out;
+    padding: 0 16px;
+    background-color: #202020;
+    color: #fafafa;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+    z-index: 999;
+}
+
+.headbar .kz-drawer.active{
+    opacity: 1;
+    height: 57px;
+    display: flex;
+}
+
+.headbar .kz-drawer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.headbar .kz-drawer a.active{
+    font-weight: 900;
+}
+
+.headbar .kz-drawer a:not(:nth-child(1)){
+    margin-left: 40px;
+}
+
+.headbar .kz-drawer a:nth-child(1){
+    flex-grow: 1;
+}
+
+
+.headbar img{
+    width: 24px;
+    height: 24px;
 }
 
 .headbar p.kz-current-section{
@@ -124,7 +183,7 @@ p, h1, h2, h3, h4, h5, h6{
     content: '';
     border-bottom: 1px solid;
     border-top: 1px solid;
-    height: 6px;
+    height: 8px;
     width: 16px;
     position: absolute;
     top: -12px;
@@ -137,7 +196,7 @@ p, h1, h2, h3, h4, h5, h6{
     content: '';
     border-bottom: 1px solid;
     border-top: 1px solid;
-    height: 6px;
+    height: 8px;
     width: 16px;
     position: absolute;
     bottom: -12px;
@@ -213,13 +272,134 @@ p, h1, h2, h3, h4, h5, h6{
     padding-bottom: 16px;
 }
 .kz-video{
+    max-width:100%;
     padding: 20px;
 }
 .kz-video iframe{
     border-radius: 10px;
+    max-width: 100%;
 }
 .kz-writeus-content{
     padding: 30px;
+}
+.kz-writeus-content h5{
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+.kz-address{
+    list-style: none;
+}
+.kz-address li{
+    font-size: 1.0rem;
+}
+.kz-address a{
+    color: rgb(20, 20, 20);
+    vertical-align: middle;
+    font-weight: 600;
+}
+.kz-address a:hover , .kz-address a:visited {
+    color: rgb(20, 20, 20);
+}
+.kz-address i{
+    width: 50px;
+    padding-right: 10px;
+    font-size: 24px;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+}
+.kz-footer{
+    position: relative;
+    background-color: #fafafa;
+    padding: 48px;
+}
+.kz-footer img{
+    width: 4rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.kz-footer-nav{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.kz-footer-nav a{
+    color: #000;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.kz-footer-nav span:hover{
+    padding-bottom: 2px;
+    border-bottom: 1px solid #000;
+}
+
+.kz-social-icon{
+    position: relative;
+    height: 10vh;
+}
+
+.kz-social-icon i{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 8px;
+    height: 32px;
+    width: 32px;
+    justify-content: space-evenly;
+    background-color: #f46f30;
+    border-radius: 50%;
+    color: #fafafa;
+}
+
+.copyright{
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    text-align: center;
+}
+.copyright p{
+    padding-top:10px;
+}
+.copyright i{
+    color: #8b0000;
+}
+.copyright a{
+    color:#f46f30;
+    font-weight: 700;
+}
+.copyright a:hover, .copyright a:visited{
+    color: #f46f30;
+}
+.kz-social-icon::after{
+    content: '';
+    width: 92px;
+    height: 4px;
+    background-color: #000;
+    bottom: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.fa-facebook-f{
+    background-color: #4c6ef5 !important;
+}
+.fa-instagram{
+    background-color: #C13584 !important;
+}
+.fa-linkedin-in{
+    background-color: #0073b1 !important;
+}
+.kz-social-icon i:hover{
+    background-color: #000 !important;
+    cursor: pointer;
 }
 
 /* ============================= */
@@ -234,6 +414,12 @@ p, h1, h2, h3, h4, h5, h6{
     border-radius: 50%;
     z-index: 999;
     position: relative;
+    transition: all 0.2s;
+}
+
+.kz-section-team img:hover{
+    transform: scale(0.9);
+    filter: grayscale(1);
 }
 
 .kz-section-team .kz-team-member .kz-content{
@@ -263,7 +449,7 @@ p, h1, h2, h3, h4, h5, h6{
 
 .kz-section-team .kz-team-member .kz-content div .kz-social{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 50%;
     margin: 0 auto;
     margin-top: 16px;

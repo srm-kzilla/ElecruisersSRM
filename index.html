@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="res/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://use.fontawesome.com/4bcb16a499.js"></script>
+    <script src="https://kit.fontawesome.com/9d2f05272b.js"></script>
+    <script src="res/main.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,15 @@
         <div class="kz-skewbg"></div>
         <div class="container-fluid">
             <div class="row headbar">
-                <img src="res/img/icons/navgrid.svg" />
+                <div class="kz-drawer">
+                    <a onclick="closeDrawer()" href="#"> <img class="kz-icon-cross" src="res/img/icons/cross.svg" /></a>
+                    <a class="active" href="#"><span>Home</span></a>
+                    <a href="#"><span>Team</span></a>
+                    <a href="#"><span>Work</span></a>
+                    <a href="#"><span>Events</span></a>
+
+                </div>
+                <a onclick="openDrawer()" href="#"><img src="res/img/icons/navgrid.svg" /></a>
                 <p class="kz-current-section">Home</p>
                 <h2>The Elecruisers</h2>
             </div>
@@ -137,10 +146,51 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-5 kz-writeus-content">
                     <h5>The Elecruisers</h5>
+                    <ul class="kz-address">
+                        <li>Fabrication Bay</li>
+                        <li>Near Tech Park</li>
+                        <li>SRM Institute of Science and Technology</li>
+                        <li>Kattankulathur</li>
+                        <li>Chennai (T.N) – 603203</li>
+                    </ul>
+                    <ul class="kz-address">
+                        <li style="padding-top: 10px;"><a href="mailto:theelecruisers@gmail.com" target="_blank"><i
+                                    class="far fa-envelope"></i>theelecruisers@gmail.com</a></li>
+                        <li style="padding-top: 5px;"><a href="tel:8939062002"><i
+                                    class="fas fa-mobile-alt"></i>+91-8939-062002</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
+    <footer class="kz-footer">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <img src="res/img/icons/logobw.png" />
+            </div>
+            <div class="row text-center">
+                <nav class="navbar navbar-light bg-transparent kz-footer-nav">
+                    <a class="navbar-brand" href="#"><span>HOME</span></a>
+                    <a class="navbar-brand" href="#"><span>Team</span></a>
+                    <a class="navbar-brand" href="#"><span>Work</span></a>
+                    <a class="navbar-brand" href="#"><span>Events</span></a>
+                </nav>
+            </div>
+            <div class="text-center">
+                <div class="kz-social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#9400;&nbsp;Copyright The Elecruisers. All rights reserved.</p>
+            <p>crafted with <i class="fas fa-heart"></i> by <a href="https://www.srmkzilla.net">SRMKZILLA
+                </a><span>🤟</span>2019
+            </p>
+        </div>
+    </footer>
 
     <script src="res/main.js" async defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
