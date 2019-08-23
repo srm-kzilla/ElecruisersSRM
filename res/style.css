@@ -685,3 +685,94 @@ nav {
 /* =============================================== */
 /* Styling for cars.html ends here */
 /* =============================================== */
+
+/* ============================= */
+/*       CAR SPECIFICATIONS      */
+/* ============================= */
+
+.d-block{
+    position: absolute;
+    top: 0px;
+    right: 100px;
+}
+.details{
+    position: absolute;
+    top: 0;
+}
+.car-header{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 200px;
+    padding-left: 200px;
+    padding-bottom: 20px;
+}
+.car-description{
+    padding-left: 200px;
+}
+
+.specifications{
+    height: 2500px;
+}
+
+#toggle-about, #toggle-specs {
+    display:block;
+    background-color: #e5e5e5;
+    color: #000;
+    width: 80vw;
+    height: 40px;
+    font-weight: bold;
+    text-align: left;
+    padding:10px;
+    padding-left: 50px;
+    margin: 0px 50px 0px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #menu-about, #menu-specs {
+    display:none;
+  }
+  #menu-about ul li,
+  #menu-specs ul li {
+    display:block;
+    background-color:#e5e5e5;
+    margin: 0px 50px 0px 100px;
+    color: #000;
+    width: 80vw;
+    padding: 10px;
+    padding-left: 50px;
+    text-align: left;
+  }
+  .toggle{
+      display: block;
+      padding: 8px 0px 8px 0px;
+      background-color: #e5e5e5;
+      width: 80vw;
+      margin-left: 100px;
+  }
+ #specs{
+     margin-top: 10px;
+ }
+ .about-intro{
+     display: inline-block;
+     background-color: #fff;
+ }
+
+ .col{
+     position: relative;
+     background-color: #d8d8d8;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-radius: 5px;
+ }
+ .head{
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-position: under;
+    text-transform: uppercase;
+ }
+ .row{
+     display: block;
+    padding: 20px 0px 20px 0px;
+ }
+ 
