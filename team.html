@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="res/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9d2f05272b.js"></script>
 </head>
 
 <body>
@@ -17,31 +18,294 @@
         <div class="kz-skewbg"></div>
         <div class="container-fluid">
             <div class="row headbar">
-                <img src="res/img/icons/navgrid.svg" />
+                <div class="kz-drawer">
+                    <a onclick="closeDrawer()" href="#"> <img class="kz-icon-cross" src="res/img/icons/cross.svg" /></a>
+                    <a href="index.html"><span>Home</span></a>
+                    <a class="active" href="team.html"><span>Team</span></a>
+                    <a href="cars.html"><span>Cars</span></a>
+                    <a href="support.html"><span>Support</span></a>
+
+                </div>
+                <a onclick="openDrawer()" href="#"><img src="res/img/icons/navgrid.svg" /></a>
                 <p class="kz-current-section">Team</p>
-                <h2>The Elecruisers</h2>
+                <h2 class="team-name">The Elecruisers</h2>
+            </div>
+            <div class="row team-card text-center">
+                <div class="col-md-3">
+                    <div class="team-card-image">
+                        <img src="res/img/team/Aditya-Baburajan.jpg">
+                    </div>
+                    <div class="team-card-link">
+                        <p class="team-card-link-title">Aditya Baburajan</p>
+                        <p class="team-card-link-subtitle">Club Captain</p>
+                        <a href=""><span class="kz-icon kz-icon-round kz-icon-facebook"></span></a>
+                        <a href=""><span class="kz-icon kz-icon-instagram"></span></a>
+                        <a href=""><span class="kz-icon kz-icon-linkedin"></span></a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="team-card-content">
+                        <p>It has been more than 2 years for me, working in association with team “The Elecruisers”.
+                            It’s
+                            really been an amazing & adventurous journey so far where I've explored about various skills
+                            such as team work, crisis management, etc. According to me what differentiates our team from
+                            the
+                            competition is the bond that we share with our fellow team mates irrespective of their age
+                            or
+                            domain. I believe that, More than a team, we are a family who are working towards One goal,
+                            of
+                            promoting e-mobility which will lead to the development of both, our team but most
+                            importantly
+                            ourselves. We always believed in ourselves and never stopped dreaming or aim high which has
+                            always proven to be an inspiration for our team.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row team-card text-center">
+                <div class="col-md-3">
+                    <div class="team-card-image">
+                        <img src="res/img/team/Sowmith-Chandra.jpg">
+                    </div>
+                    <div class="team-card-link">
+                        <p class="team-card-link-title">Sowmith Chandra</p>
+                        <p class="team-card-link-subtitle">Vice captain</p>
+                        <a href=""><span class="kz-icon kz-icon-round kz-icon-facebook"></span></a>
+                        <a href=""><span class="kz-icon kz-icon-instagram"></span></a>
+                        <a href=""><span class="kz-icon kz-icon-linkedin"></span></a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="team-card-content">
+                        <p>It's been a wonderful journey, being part of this team for more than 2 years. The journey
+                            involved a lot of learning, fun and hardships. But we "The Elecruisers" neither gave up nor
+                            broke down. The best experience I had with this team is the way we take up the challenge and
+                            fight back. Every setback came our way propelled us to achieve something bigger. I'm very
+                            grateful as the team gave me an opportunity to work harder for the team to achieve greater
+                            heights. Being a part of "The Elecruisers" family I will always strive for the team to
+                            achieve
+                            its dreams and to bring success and glory for the team.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row team-card text-center">
+                <div class="col-md-3">
+                    <div class="team-card-image">
+                        <img src="res/img/team/Vishal-Singh.jpg">
+                    </div>
+                    <div class="team-card-link">
+                        <p class="team-card-link-title">Vishal Singh</p>
+                        <p class="team-card-link-subtitle">Project Manager</p>
+                        <a href=""><span class="kz-icon kz-icon-round kz-icon-facebook"></span></a>
+                        <a href=""><span class="kz-icon kz-icon-instagram"></span></a>
+                        <a href=""><span class="kz-icon kz-icon-linkedin"></span></a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="team-card-content">
+                        <p>Started my journey here with very little knowledge and lots of insecurity.What hasn't this
+                            team
+                            tought me? The family gets all the credit for honing me and making me one of them. The goal
+                            is
+                            to help each other in winning the 2 year long goal that we are chasing (BAJA). My personal
+                            aim
+                            is to learn as much as I can and share that with others. The sport of sleepless nights and
+                            greasy pants always pushes me to do more and keep moving forward. This journey had many ups
+                            and
+                            downs but we "The Elecruisers" always faced it with all our might and are emerge victorious.
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="row kz-section kz-section-team">
 
             </div>
         </div>
+        <footer class="kz-footer">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <img src="res/img/icons/logobw.png" />
+                </div>
+                <div class="row text-center">
+                    <nav class="navbar navbar-light bg-transparent kz-footer-nav">
+                        <a class="navbar-brand" href="index.html"><span>HOME</span></a>
+                        <a class="navbar-brand" href="team.html"><span>Team</span></a>
+                        <a class="navbar-brand" href="cars.html"><span>Cars</span></a>
+                        <a class="navbar-brand" href="support.html"><span>Support</span></a>
+                    </nav>
+                </div>
+                <div class="text-center">
+                    <div class="kz-social-icon">
+                        <a href="https://m.facebook.com/TheElecruisers/?ref=bookmarks" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/the_elecruisers/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/the-elecruisers/about/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&#9400;&nbsp;Copyright The Elecruisers. All rights reserved.</p>
+                <p>crafted with <i class="fas fa-heart"></i> by <a href="devs.html">SRMKZILLA
+                    </a><span>🤟</span>2019
+                </p>
+            </div>
+        </footer>
     </section>
-
+    <script src="res/main.js" async defer></script>
     <script>
         const team = [
             {
-                name: "yo",
-                designation: "yo",
-                photo: "",
-                linkedin: "",
-                instagram: "yo"
+                name: "Apurv Singh",
+                designation: "Electrical Lead",
+                photo: "Apurv-Singh.jpg",
+                instagram: "https://www.instagram.com/black_fang13/"
             },
             {
-                name: "Aakash Sharma",
-                designation: "lead",
-                photo: "",
-                linkedin: "",
-                instagram: "yo"
+                name: "Alby Reju",
+                designation: "Chassis design Engineer",
+                photo: "Alby-Reju.jpg",
+                facebook: "https://www.facebook.com/alby.reju",
+                instagram: "https://www.instagram.com/albichan.098/"
+            },
+            {
+                name: "T Dileswar Rao",
+                designation: "Transmission Engineer",
+                photo: "DILESWAR-RAO.jpg",
+                facebook: "https://www.facebook.com/dillu.rao.3"
+            },
+            {
+                name: "Narayan Kumar.K",
+                designation: "Brakes & wheel assembly Engineer",
+                photo: "Nara.jpg",
+                facebook: "https://m.facebook.com/narayan.kumar.5458",
+                linkedin: "https://www.linkedin.com/learning/me",
+                instagram: "https://www.instagram.com/a.k.a_nara/?hl=en"
+            },
+            {
+                name: "Ansh Yadav",
+                designation: "Electrical Engineer",
+                photo: "Ansh-Yadav.jpg",
+                facebook: "https://facebook.com/ay0910",
+                linkedin: "https://www.linkedin.com/in/ansh-y-11545098",
+                instagram: "https://www.instagram.com/_ansh_yadav_/"
+            },
+            {
+                name: "Kanishk Prasad",
+                designation: "Corporate Associate",
+                photo: "kanshik.jpg",
+                facebook: "https://www.facebook.com/kanishk.prasad.5",
+                instagram: "https://www.instagram.com/kanishkprasad/"
+            },
+            {
+                name: "Ayan Gupta",
+                designation: "Suspension Engineer",
+                photo: "Ayan-Gupta.jpg",
+                facebook: "https://www.facebook.com/ayan.goel.9",
+                linkedin: "https://www.linkedin.com/in/ayan-gupta-250105188",
+                instagram: "Instagram.com/ayan___gupta"
+            },
+            {
+                name: " Anubhav Singh",
+                designation: "Associate Steering Engineer",
+                photo: "Anubhav.jpg",
+                facebook: "https://www.facebook.com/profile.php?id=100007996932522",
+                linkedin: "https://www.instagram.com/anuubhav01/",
+                instagram: "https://www.linkedin.com/in/lucky-man-b5244a191/"
+            },
+            {
+                name: "Devansh Moduga",
+                designation: "Associate chassis design Engineer",
+                photo: "Devansh-Moduga.jpg",
+                facebook: "https://m.facebook.com/dmoduga?ref=bookmarks",
+                linkedin: "https://www.linkedin.com/in/devansh-moduga-8b90b7188/",
+                instagram: "https://www.instagram.com/devansh.moduga/"
+            },
+            {
+                name: "Megh Bhatele",
+                designation: "Associate Brakes and wheel Assembly",
+                photo: "MEGH.jpg",
+                facebook: "https://www.facebook.com/megh.bhushan.9",
+                linkedin: "https://www.linkedin.com/in/megh-bhatele-95b514191/",
+                instagram: "https://www.instagram.com/megh_bhatele/"
+            },
+            {
+                name: "Sudhanshu Saxena",
+                designation: "Transmission Engineer",
+                photo: "Sudhanshu-Saxena.jpg",
+                facebook: "https://www.facebook.com/profile.php?id=100006665505090",
+                linkedin: "linkedin.com/in/sudhanshu-saxena-8a2105188",
+                instagram: "https://www.instagram.com/sudhanshu__saxena/"
+            },
+            {
+                name: "Dave Martin",
+                designation: "Corporate Associate",
+                photo: "dave.jpeg",
+                facebook: "https://www.facebook.com/dave.martin.12532364",
+                linkedin: "https://www.linkedin.com/in/dave-martin-3b3573170/",
+                instagram: "https://www.instagram.com/_dave.martin_/"
+            },
+            {
+                name: "Md Akmal Hussain",
+                designation: "Electronics Engineer",
+                photo: "akamal.jpg",
+                facebook: "https://m.facebook.com/akmal.khan.39108297",
+                linkedin: "https://www.linkedin.com/in/md-akmal-hussain-25b288188",
+                instagram: "https://www.instagram.com/akmal_kne/"
+            },
+            {
+                name: "K.Sai Charan",
+                designation: "Steering Engineer",
+                photo: "Sai-Charan.jpg",
+                facebook: "https://www.facebook.com/charan.maverick",
+                linkedin: "https://www.linkedin.com/in/sai-cherry-90b524161/",
+                instagram: "https://www.instagram.com/the_torchbearer_/"
+            },
+            {
+                name: "Sidhanth Sharma",
+                designation: "Associate Electrical Engineer",
+                photo: "Sidhhant.jpeg",
+                facebook: "https://www.facebook.com/sidhanth.sharma.921",
+                instagram: "https://www.instagram.com/blurryvision101/"
+            },
+            {
+                name: "Ayush Gupta",
+                designation: "Associate electrical Engineer",
+                photo: "Ayush-Gupta.jpg",
+                facebook: "https://m.facebook.com/AyushGupta799",
+                linkedin: "https://www.linkedin.com/in/ayushgupta799",
+                instagram: "https://www.instagram.com/ayushgupta799/"
+            },
+            {
+                name: "Isha Jagadish Naik",
+                designation: "Corporate Associate",
+                photo: "Isha-Naik.jpg",
+                facebook: "https://www.facebook.com/isha.naik.31",
+                linkedin: "https://www.linkedin.com/in/isha-naik/",
+                instagram: "https://www.instagram.com/isha__n_/?hl=en"
+            },
+            {
+                name: "Gaurav Khanna",
+                designation: "Corporate Associate",
+                photo: "Gaurav-Khanna.jpg",
+                facebook: "https://www.facebook.com/gaurav.khanna.10420",
+                linkedin: "https://www.linkedin.com/in/gaurav-khanna-7086b1160/",
+                instagram: "https://www.instagram.com/gaurav.khanna97/"
+            },
+            {
+                name: "K Vamsi Reddy",
+                designation: "Steering lead",
+                photo: "Vamsi-Reddy.jpg",
+                facebook: "https://www.facebook.com/vamsi.reddy.963",
+                linkedin: "https://www.linkedin.com/in/sai-vamsi-krishna-reddy-k-1b030a169",
+                instagram: "https://www.instagram.com/vamsi.reddy.963/"
+            },
+            {
+                name: "Ajay Samuel",
+                designation: "Corporate Associate",
+                photo: "ajay.jpg",
+                facebook: "https://www.facebook.com/ajay.samuel.96?ref=bookmarks",
+                linkedin: "https://www.instagram.com/sam_ajy/?hl=en"
             }
         ]
 
@@ -79,6 +343,15 @@
             return template.content.firstChild;
         }
     </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 </body>
 
