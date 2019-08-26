@@ -68,6 +68,42 @@ nav {
     padding-top: 80px !important;
     padding-bottom: 80px !important;
 }
+/* contact us form */
+.kz-contactus{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.kz-contactus form{
+    width: 100%;
+}
+.form-control{
+    border-radius: 0em !important;
+}
+.kz-form> .form-group input:focus , .kz-form> .form-group textarea:focus{
+    box-shadow: none;
+}
+.kz-form> .form-group input{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #000;
+}
+.kz-form> .form-group textarea{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #000;
+}
+@media(max-width:576px){
+    .kz-section{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .kz-contactus{
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+}
 
 /* Icons */
 .kz-icon{
