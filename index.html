@@ -7,17 +7,15 @@
     <title>Elecruisers SRM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="res/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9d2f05272b.js"></script>
 </head>
 
 <body>
 
     <section class="hero-navbar">
-        <div class="kz-skewbg"></div>
-        <div class="container-fluid">
-            <div class="row headbar">
+        <div class="container-fluid no-padding">
+            <!-- <div class="row headbar">
                 <div class="kz-drawer">
                     <a onclick="closeDrawer()" href="#"> <img class="kz-icon-cross" src="res/img/icons/cross.svg" /></a>
                     <a class="active" href="index.html"><span>Home</span></a>
@@ -29,18 +27,45 @@
                 <a onclick="openDrawer()" href="#"><img src="res/img/icons/navgrid.svg" /></a>
                 <p class="kz-current-section">Home</p>
                 <h2 class="team-name">The Elecruisers</h2>
-            </div>
+            </div> -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent abs-navbar">
+                <a class="navbar-brand" href="index.html"><img src="res/img/icons/logo.png" /><span>The
+                        Elecruisers</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cars.html">Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="support.html">Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- <div class="row headbar">
+                <h2 class="team-name">The Elecruisers</h2>
+            </div> -->
             <div class="row hero">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block" src="res/img/gallery/ECR_1.png" alt="First slide">
+                            <img class="d-block" src="res/img/hero/ecr1.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block" src="res/img/gallery/ECR_2.png" alt="Second slide">
+                            <img class="d-block" src="res/img/hero/ecr2.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block" src="res/img/gallery/ECR_3.png" alt="Third slide">
+                            <img class="d-block" src="res/img/hero/ecr3.jpg" alt="Third slide">
                         </div>
                     </div>
                 </div>
@@ -51,29 +76,22 @@
         <h2 class="kz-title-bold">our vision</h2>
         <div class="container mt-5">
             <div class="row text-center kz-section-vision-content">
-                <p>This team is fuelled by passion and desire to keep improving, no matter the
-                    setbacks and evolve into a more well round unit, focused on consistency, hard-work and producing
-                    best end product that they are capable of.</p><br>
+                <p>This team is fuelled by passion and desire to keep improving, no matter the setbacks and evolve into a more well round unit, focused on consistency, hard-work and producing best end product that they are capable of.</p><br>
                 <p>
-                    With the rise in global focus towards alternative transportation solution, it’s not just an ATV for
-                    them, it is their dream to bring e-mobility to a whole new level and contribute towards a better,
-                    greener future.
+                    With the rise in global focus towards alternative transportation solution, it’s not just an ATV for them, it is their dream to bring e-mobility to a whole new level and contribute towards a better, greener future.
                 </p>
             </div>
         </div>
     </section>
-    <section class="kz-section kz-section-vision">
+    <section class="kz-section kz-section-vision srmunivbg">
         <div class="kz-section-skewbg"></div>
         <h2 class="kz-title-bold">SRM University</h2>
         <div class="container mt-5">
             <div class="row text-center kz-section-vision-content">
-                <p>SRM Institute of Science and Technology is one of the top ranking universities in India with over
-                    38,000 students and more than 2600 faculty across all the campus, offering a wide range of
-                    undergraduate, postgraduate and doctoral programs in Engineering, Management, Medicine and Health
-                    sciences, and Science and Humanities.</p><br>
-                <p>A diverse and eclectic mix of students and their ideas cater to an environment where students can
-                    learn and expand their knowledge in various fields of interest and improve themselves, diving deep
-                    into a plethora of subjects and share their work with like minded individuals.</p>
+                <p>SRM Institute of Science and Technology is one of the top ranking universities in India with over 38,000 students and more than 2600 faculty across all the campus, offering a wide range of undergraduate, postgraduate and doctoral programs
+                    in Engineering, Management, Medicine and Health sciences, and Science and Humanities.</p><br>
+                <p>A diverse and eclectic mix of students and their ideas cater to an environment where students can learn and expand their knowledge in various fields of interest and improve themselves, diving deep into a plethora of subjects and share
+                    their work with like minded individuals.</p>
             </div>
         </div>
     </section>
@@ -120,18 +138,12 @@
         <h2 class="kz-title-bold"><span style="text-transform:lowercase;">e</span>Baja sae india</h2>
         <div class="container mt-5">
             <div class="row text-center kz-section-vision-content">
-                <p>Baja SAE is an intercollegiate design competition run by the Society of Automotive Engineers (SAE).
-                    Teams of students from universities all over the world design and build small off-road cars.The goal
-                    in Baja SAE racing is to design, build and race off-road vehicles that can withstand the harshest
-                    elements of rough terrain. The object of the competition is to simulate real-world engineering
-                    design projects and their related challenges.
+                <p>Baja SAE is an intercollegiate design competition run by the Society of Automotive Engineers (SAE). Teams of students from universities all over the world design and build small off-road cars.The goal in Baja SAE racing is to design, build
+                    and race off-road vehicles that can withstand the harshest elements of rough terrain. The object of the competition is to simulate real-world engineering design projects and their related challenges.
                 </p><br>
                 <p>
-                    eBAJA is an electric engine driven BAJA event organised by SAEINDIA. This was a new initiative
-                    introduced in 2014 on the counsel of former President of India, APJ Abdul Kalam, in order to promote
-                    greener mobility. All entries in this category run on rechargeable lithium ion batteries. Teams of
-                    students need to design and build electric powered ATV that has traction motor of 48V with fully
-                    automatic transmission having 10.83 Gear Ratios and 110 Ah of battery pack.
+                    eBAJA is an electric engine driven BAJA event organised by SAEINDIA. This was a new initiative introduced in 2014 on the counsel of former President of India, APJ Abdul Kalam, in order to promote greener mobility. All entries in this category run on rechargeable
+                    lithium ion batteries. Teams of students need to design and build electric powered ATV that has traction motor of 48V with fully automatic transmission having 10.83 Gear Ratios and 110 Ah of battery pack.
                 </p>
             </div>
         </div>
@@ -163,14 +175,12 @@
             </div>
         </div>
     </section>
-    <section class="kz-section kz-section-vision">
+    <section class="kz-section kz-section-vision writeus">
         <h2 class="kz-title-bold">Write Us</h2>
         <div class="container mt-5">
             <div class="row kz-section-vision-content">
                 <div class="col-md-6 kz-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zv6yx3tF1VQ?start=4"
-                        frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zv6yx3tF1VQ?start=4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-5 kz-writeus-content">
@@ -244,17 +254,17 @@
     </footer>
 
     <script src="res/main.js" async defer></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 
     <script>
+        $('.carousel').carousel({
+            interval: 5000
+        })
         $(document).ready(function() {
             $("#send-mail-btn").click(function(e) {
                 e.preventDefault();
