@@ -19,26 +19,31 @@
     <meta name="language" content="English">
     <meta name="author" content="SRMKZILLA">
 
-<link rel="icon" href="favicon.png">
+    <link rel="icon" href="favicon.png">
 
-<!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook -->
 
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://theelecruisers.in/">
-<meta property="og:title" content="The Elecruisers">
-<meta property="og:description" content="The official e-BAJA SAE India Team of SRM Institute of Science and Technology.">
-<meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://theelecruisers.in/">
+    <meta property="og:title" content="The Elecruisers">
+    <meta property="og:description"
+        content="The official e-BAJA SAE India Team of SRM Institute of Science and Technology.">
+    <meta property="og:image" content="">
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://theelecruisers.in/">
-<meta property="twitter:title" content="The Elecruisers">
-<meta property="twitter:description" content="The official e-BAJA SAE India Team of SRM Institute of Science and Technology.">
-<meta property="twitter:image" content="">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://theelecruisers.in/">
+    <meta property="twitter:title" content="The Elecruisers">
+    <meta property="twitter:description"
+        content="The official e-BAJA SAE India Team of SRM Institute of Science and Technology.">
+    <meta property="twitter:image" content="">
 
 </head>
 
-<body>
+<body onload="loading()">
+    <div id="loader">
+        <img src="res/icons/loader.gif" />
+    </div>
 
     <section class="hero-navbar">
         <div class="kz-skewbg"></div>
@@ -72,7 +77,8 @@
 
     <section class="specifications">
         <div id="about">
-            <a id="toggle-about">ABOUT</a>
+            <a id="toggle-about" onclick="rotate_arrow_icon()">ABOUT<span><img id="arrow_img"
+                        src="res/img/icons/move-to-next.png"></span></a>
         </div>
         <div id="menu-about">
             <div class="toggle">
@@ -85,7 +91,8 @@
             </div>
         </div>
         <div id="specs">
-            <a id="toggle-specs">SPECIFICATIONS</a>
+            <a id="toggle-specs" onclick="rotate_arrow_icon2()">SPECIFICATIONS<span><img id="arrow_img2"
+                        src="res/img/icons/move-to-next.png"></span></a>
         </div>
         <div id="menu-specs">
             <div class="toggle">
@@ -218,14 +225,14 @@
 
     <script src="res/main.js" async defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
@@ -236,8 +243,41 @@
         $('#toggle-specs').click(function () {
             $('#menu-specs').slideToggle('slow')
         });
+    </script>
+    <script>
+        var counter = 0;
+        var counter1 = 0;
 
+        function rotate_arrow_icon() {
+            var arrow_icon = document.getElementById('arrow_img');
+            if (counter % 2 == 0) {
+                arrow_icon.style.transform = 'rotate(90deg)';
+                arrow_icon.style.transitionTimingFunction = 'ease';
+            } else {
+                arrow_icon.style.transform = 'rotate(0deg)';
+                arrow_icon.style.transitionTimingFunction = 'ease-in-out';
+            }
+            counter++;
+        }
 
+        function rotate_arrow_icon2() {
+            var arrow_icon = document.getElementById('arrow_img2');
+            if (counter1 % 2 == 0) {
+                arrow_icon.style.transform = 'rotate(90deg)';
+                arrow_icon.style.transitionTimingFunction = 'ease';
+            } else {
+                arrow_icon.style.transform = 'rotate(0deg)';
+                arrow_icon.style.transitionTimingFunction = 'ease-in-out';
+            }
+            counter1++;
+        }
+    </script>
+    <script>
+        function loading() {
+            var loader = document.getElementById('loader');
+            loader.style.display = 'none';
+            console.log("website loaded!");
+        }
     </script>
 
 </body>

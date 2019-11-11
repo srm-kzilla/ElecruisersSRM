@@ -35,10 +35,30 @@ h6 {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+#loader {
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 999;
+}
+
+#loader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 nav {
     height: 10vh;
     background: #5b78c7;
     position: relative;
+}
+
+.navbar-nav li {
+    padding: 0px 18px;
 }
 
 .carousel {
@@ -51,8 +71,38 @@ nav {
     transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
+.nav-link {
+    font-size: 18px;
+}
+
+.navbar-brand span {
+    display: inline-block;
+    font-size: 24px;
+    padding: 0px 20px;
+}
+
+@media(max-width: 576px) {
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .navbar-nav li {
+        padding: 0px;
+    }
+
+    .navbar-brand span {
+        font-size: 12px !important;
+        padding: 0px 5px;
+    }
+
+    .navbar-brand img {
+        height: 30px !important;
+        width: 30px !important;
+    }
+}
+
 .kz-title-bold {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 900;
     letter-spacing: 7px;
     text-align: center;
@@ -78,6 +128,7 @@ nav {
         letter-spacing: 4px;
         margin-bottom: 32px;
     }
+
     .kz-title-bold::after {
         width: 46px;
     }
@@ -176,6 +227,7 @@ nav {
 }
 
 
+
 /* <<<<<index.html>>>>>> */
 
 
@@ -187,8 +239,9 @@ nav {
 }
 
 .navbar-brand img {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
+    vertical-align: middle;
 }
 
 .headbar {
@@ -285,21 +338,26 @@ nav {
     .headbar h2 {
         font-size: 0.975rem;
     }
+
     .headbar p.kz-current-section {
         font-size: 0.7rem;
         margin-left: 5px;
     }
+
     .headbar img {
         margin-left: 5px;
         width: 18px;
         height: 18px;
     }
+
     .kz-drawer img {
         margin-left: 5px;
     }
+
     .headbar .kz-drawer a {
         font-size: 0.7rem;
     }
+
     .headbar .kz-drawer.active {
         padding-left: 5px;
         padding-right: 5px;
@@ -365,7 +423,7 @@ nav {
     width: 100%;
     height: 100vh;
     transform: skewY(-8deg);
-    background-color: #fafafa;
+    background-color: rgba(206, 192, 192, 0.849);
     z-index: -1;
 }
 
@@ -376,7 +434,7 @@ nav {
     width: 100%;
     height: 70vh;
     transform: skewY(-8deg);
-    background-color: #fafafa;
+    background-color: rgba(240, 239, 239, 0.644);
     z-index: -1;
 }
 
@@ -385,6 +443,7 @@ nav {
         width: 100%;
         height: 60vh;
     }
+
     .kz-skewbg {
         height: 70vh;
     }
@@ -395,6 +454,7 @@ nav {
 }
 
 .kz-section-vision-content p {
+    font-size: 16px;
     letter-spacing: 1px;
     word-spacing: 2px;
     padding-left: 30px;
@@ -408,6 +468,12 @@ nav {
     margin-bottom: auto;
 }
 
+@media(max-width:576px) {
+    .kz-section-vision-content p {
+        font-size: 15px;
+    }
+}
+
 .winnerlistleft {
     padding: 30px;
 }
@@ -419,7 +485,7 @@ nav {
 .competition {
     font-weight: 800;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     color: #000;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -492,7 +558,7 @@ nav {
 
 .kz-footer {
     position: relative;
-    background-color: #fafafa;
+    background-color: rgba(240, 239, 239, 0.644);
     padding: 48px;
 }
 
@@ -517,6 +583,11 @@ nav {
     font-weight: 900;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.kz-footer-nav span {
+    font-size: 16px;
+    padding: 0px;
 }
 
 .kz-footer-nav span:hover {
@@ -601,10 +672,12 @@ nav {
     .kz-footer-nav {
         margin-bottom: 0px;
     }
+
     .kz-footer-nav a {
         padding-left: 0px;
         padding-right: 0px;
     }
+
     .copyright {
         width: 100%;
         padding: 0px;
@@ -686,26 +759,32 @@ nav {
         margin-left: 5px !important;
         margin-right: 5px !important;
     }
+
     .team-card-image {
         margin-right: auto;
         margin-left: auto;
         border: none;
     }
+
     .team-card-image img {
         width: 30%;
     }
+
     .team-card-link {
         width: 100%;
     }
+
     .team-card-content p {
         padding-top: 10px;
         padding-right: 0px;
         font-size: 0.8rem;
         opacity: 0.7;
     }
+
     .team-card-content {
         padding-bottom: 20px;
     }
+
     .writeus {
         padding-left: 20px;
         padding-right: 20px;
@@ -823,7 +902,7 @@ nav {
     right: 0%;
     top: 50%;
     transform: translate(50%, -50%);
-    background-color: #EB750C;
+    background-color: #FFAB66;
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -887,7 +966,7 @@ nav {
 }
 
 .specs h3 {
-    color: #EB750C;
+    color: #FFAB66;
     font-size: 22px;
     font-family: sans-serif;
     font-weight: 700;
@@ -923,42 +1002,53 @@ nav {
         margin: 20px;
         height: 60vh;
     }
+
     .car-left {
         height: 60vh;
     }
+
     .car-right {
         height: 60vh;
     }
+
     .circle-left,
     .circle-right {
         height: 100px;
         width: 100px;
     }
+
     .car-photo img {
         height: 40%;
         width: 50%;
     }
+
     .car-left-icon img {
         height: 70px;
         width: 70px;
     }
+
     .car-left-title h1 {
         padding: 10px;
         font-size: 22px;
     }
+
     .specs {
         padding: 5px;
         padding-left: 10px;
     }
+
     .specs h6 {
         font-size: 10px;
     }
+
     .specs h3 {
         font-size: 12px;
     }
+
     .car-left-footer {
         height: 5vh;
     }
+
     .car-left-footer p {
         font-size: 12px;
         padding: 5px;
@@ -970,42 +1060,53 @@ nav {
         margin: 20px;
         height: 60vh;
     }
+
     .car-left {
         height: 60vh;
     }
+
     .car-right {
         height: 60vh;
     }
+
     .circle-left,
     .circle-right {
         height: 100px;
         width: 100px;
     }
+
     .car-photo img {
         height: 40%;
         width: 50%;
     }
+
     .car-left-icon img {
         height: 70px;
         width: 70px;
     }
+
     .car-left-title h1 {
         padding: 10px;
         font-size: 22px;
     }
+
     .specs {
         padding: 0px;
         padding-left: 10px;
     }
+
     .specs h6 {
         font-size: 8px;
     }
+
     .specs h3 {
         font-size: 12px;
     }
+
     .car-left-footer {
         height: 5vh;
     }
+
     .car-left-footer p {
         font-size: 12px;
         padding: 5px;
@@ -1103,6 +1204,7 @@ nav {
     margin-top: 10px;
 }
 
+
 .about-intro {
     display: inline-block;
     background-color: #fff;
@@ -1136,11 +1238,13 @@ nav {
         margin-right: 30px;
         margin-left: 80px;
     }
+
     .car-description {
         text-align: center;
         margin-right: 30px;
         font-size: 12px;
     }
+
     #toggle-about,
     #toggle-specs {
         width: 85vw;
@@ -1150,12 +1254,14 @@ nav {
         border-radius: 3px;
         font-size: 12px;
     }
+
     .toggle {
         padding: 8px 20px 20px 20px;
         width: 85vw;
         margin: 0px 50px 0px 30px;
         font-size: 10px;
     }
+
     .col {
         border-radius: 1px;
     }
@@ -1168,15 +1274,18 @@ nav {
         height: 400px !important;
         width: auto;
     }
+
     .car-header {
         margin-left: 30px;
         text-align: left;
     }
+
     .car-description {
         text-align: left;
         margin-left: 30px;
         font-size: 13px;
     }
+
     #toggle-about,
     #toggle-specs {
         width: 82vw;
@@ -1186,12 +1295,14 @@ nav {
         border-radius: 3px;
         font-size: 12px;
     }
+
     .toggle {
         padding: 8px 20px 20px 20px;
         width: 82vw;
         margin: 0px 100px 0px 40px;
         font-size: 10px;
     }
+
     .col {
         border-radius: 1px;
     }
@@ -1271,15 +1382,18 @@ nav {
         padding-top: 50px;
         font-size: 26px;
     }
+
     .technical-header {
         margin: 40px 0px 0px 0px;
         width: 100%;
         height: 100px;
         font-size: 20px;
     }
+
     .subtitle {
         margin: 30px 0px 40px 0px;
     }
+
     .support-description {
         margin-top: 30px;
         padding-top: 10px;
@@ -1287,6 +1401,7 @@ nav {
         padding-left: 50px;
         padding-right: 50px;
     }
+
     .support-title {
         font-size: 26px;
         font-weight: bold;
@@ -1294,13 +1409,16 @@ nav {
         padding-top: 40px;
         line-height: 100%;
     }
+
     .illustration {
         height: 150px !important;
         width: auto;
     }
+
     .financial-support-header {
         font-size: 26px;
     }
+
     .finanical-support-description {
         margin: 20px 60px 0px 60px;
     }
@@ -1313,16 +1431,19 @@ nav {
         padding-top: 50px;
         font-size: 30px;
     }
+
     .technical-header {
         margin: 40px 0px 0px 0px;
         width: 100%;
         height: 180px;
         font-size: 28px;
     }
+
     .support-description {
         margin-top: 30px;
         padding: 70px 50px 10px 50px;
     }
+
     .support-title {
         font-size: 30px;
         font-weight: bold;
@@ -1330,12 +1451,15 @@ nav {
         padding-top: 0px;
         line-height: 100%;
     }
+
     .support-subtitle {
         padding-bottom: 30px;
     }
+
     .financial-support-header {
         font-size: 30px;
     }
+
     .finanical-support-description {
         margin: 20px 100px 0px 100px;
     }
