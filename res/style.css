@@ -797,8 +797,7 @@ nav {
     }
 
     .team-card-content p {
-        padding-top: 10px;
-        padding-right: 0px;
+        padding: 10px 10px;
         font-size: 0.8rem;
         opacity: 0.7;
     }
