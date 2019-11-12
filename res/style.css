@@ -424,7 +424,7 @@ nav {
     width: 100%;
     height: 100vh;
     transform: skewY(-8deg);
-    background-color: rgba(206, 192, 192, 0.849);
+    background-color: #F1F1F1;
     z-index: -1;
 }
 
@@ -435,7 +435,7 @@ nav {
     width: 100%;
     height: 70vh;
     transform: skewY(-8deg);
-    background-color: rgba(240, 239, 239, 0.644);
+    background-color: #F1F1F1;
     z-index: -1;
 }
 
