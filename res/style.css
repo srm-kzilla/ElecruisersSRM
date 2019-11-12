@@ -7,6 +7,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 html {
@@ -44,11 +45,10 @@ h6 {
     z-index: 999;
 }
 
-#loader img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#loader video {
+    height: 100vh;
+    width: 100%;
+    transform: scale(1.2);
 }
 
 nav {
@@ -270,6 +270,7 @@ nav {
     font-size: 0.8rem;
     letter-spacing: 0.8px;
     z-index: 999;
+    background: url("icons/fiber.png");
 }
 
 .headbar .kz-drawer img:hover {
@@ -326,7 +327,7 @@ nav {
     top: 50%;
     left: 50%;
     margin-top: 5px;
-    font-size: 2.5rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
@@ -369,10 +370,10 @@ nav {
     border-bottom: 1px solid;
     border-top: 1px solid;
     height: 8px;
-    width: 16px;
+    width: 12px;
     position: absolute;
-    top: -12px;
-    right: 8px;
+    top: -16px;
+    right: 12px;
     border-color: #202020;
     transform: rotate(-30deg);
 }
@@ -390,10 +391,10 @@ nav {
     border-bottom: 1px solid;
     border-top: 1px solid;
     height: 8px;
-    width: 16px;
+    width: 12px;
     position: absolute;
-    bottom: -12px;
-    left: 8px;
+    bottom: -16px;
+    left: 12px;
     border-color: #202020;
     transform: rotate(-30deg);
 }
@@ -468,9 +469,30 @@ nav {
     margin-bottom: auto;
 }
 
+.kz-sponsor-image {
+    display: inline-block;
+    margin: 0 48px;
+    /* border: 1px solid black; */
+}
+
+.kz-sponsor-image img {
+    width: 125px;
+    height: auto;
+}
+
 @media(max-width:576px) {
     .kz-section-vision-content p {
         font-size: 15px;
+    }
+
+    .kz-sponsor-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .kz-section-vision .container {
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -865,6 +887,28 @@ nav {
     box-shadow: 5px 10px 18px #888888;
 }
 
+.ecr4 {
+    position: relative;
+    padding: 0px;
+    height: 100vh;
+    width: 50%;
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: url('../res/img/gallery/ecr4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ecr4>.blue_overlay {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background: #030C22;
+    opacity: 0.4;
+}
+
 .car-left {
     position: relative;
     padding: 0px;
@@ -890,7 +934,7 @@ nav {
     position: absolute;
     z-index: 1070;
     height: 50%;
-    width: 50%;
+    width: 40%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -956,6 +1000,16 @@ nav {
 
 .specs ul {
     list-style: none;
+}
+
+.specs p {
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    font-size: 1.5rem;
+    margin-right: auto;
 }
 
 .specs h6 {
