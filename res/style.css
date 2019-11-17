@@ -1675,3 +1675,168 @@ div.coming_soon {
         margin: 20px 100px 0px 100px;
     }
 }
+
+/* --------------------------------------------- */
+/* ------------ Institute.html CSS ------------- */
+/* --------------------------------------------- */
+
+.about-srm-card {
+    width: 100%;
+    height: 350px;
+    background-color: rgba(240, 239, 239, 0.644);
+    margin: 50px 10px;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+}
+
+.about-srm-card-img {
+    overflow: hidden;
+}
+
+.about-srm-card-img img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: ease-in-out 0.6s;
+}
+
+.about-srm-card-img img:hover {
+    transform: scale(1.2, 1.2);
+    filter: blur(1px) brightness(90%);
+    transition: ease-in-out 0.6s;
+}
+
+.about-srm-card-content {
+    position: relative;
+    padding: 20px 50px !important;
+}
+
+.about-srm-card-content-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    border-top: 1px solid #000;
+}
+
+.about-srm-card-content-footer a {
+    display: block;
+    /* -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white; */
+    color: #000;
+    font-size: 1.3rem;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.about-srm-card-content-footer a:hover {
+    color: #f1f1ff;
+    /* -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: black; */
+    background-color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+.about-srm-card-content p {
+    margin-top: 40px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+.cnv-card {
+    position: relative;
+    height: 300px;
+    background: url('../res/img/gallery/cnv-cards.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin: 10px;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.cnv-card img {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    filter: drop-shadow(0 0 0.75rem grey);
+}
+
+.cnv-card-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: #f1f1f1;
+}
+
+.cnv-card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.cnv-card-content h5 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.95rem;
+    padding: 5px 0px;
+}
+
+.cnv-card-content p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+}
+
+.cnv-card-content a {
+    position: absolute;
+    top: -60%;
+    right: 12%;
+    font-size: 36px;
+    color: #211717;
+    transition: 0.6s ease-in-out;
+}
+
+.cnv-card-content a:hover {
+    transform: scale(0.9);
+    transition: 0.6s ease-in-out;
+}
+
+@media(max-width:576px) {
+    .about-srm-card {
+        margin: 50px 0px;
+        height: 450px;
+    }
+
+    .about-srm-card-content {
+        padding: 15px 10px !important;
+    }
+
+    .about-srm-card-content p {
+        margin-top: 0px;
+        font-size: 14px;
+        letter-spacing: normal;
+        word-spacing: normal;
+        color: #000;
+    }
+
+    .about-srm {
+        padding: 0px 30px;
+    }
+
+    .cnv-card-content a {
+        font-size: 28px;
+        top: -48%;
+    }
+
+    .about-srm-card-img img {
+        border-bottom-left-radius: 0px;
+    }
+}

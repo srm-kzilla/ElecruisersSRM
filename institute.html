@@ -46,139 +46,80 @@
     </div>
 
     <section class="hero-navbar">
-        <div class="kz-skewbg"></div>
-        <div class="container-fluid">
+        <!-- <div class="kz-skewbg"></div> -->
+        <div class="container-fluid" style="position: relative;">
             <div class="row headbar">
                 <div class="kz-drawer">
                     <a onclick="closeDrawer()" href="#"> <img class="kz-icon-cross" src="res/img/icons/cross.svg" /></a>
                     <a href="index.html"><span>Home</span></a>
-                    <a href="team.html"><span>Team</span></a>
+                    <a href="/"><span>Team</span></a>
                     <a href="cars.html"><span>Cars</span></a>
-                    <a href="institute.html"><span>Institute</span></a>
+                    <a class="active" href="institute.html"><span>Institute</span></a>
                     <a href="support.html"><span>Support</span></a>
-
                 </div>
                 <a onclick="openDrawer()" href="#"><img src="res/img/icons/navgrid.svg" /></a>
-                <p class="kz-current-section">Devs</p>
+                <p class="kz-current-section">College</p>
                 <h2 class="team-name">The Elecruisers</h2>
-            </div>
-            <div class="row kz-section kz-section-team">
-
             </div>
         </div>
     </section>
 
-    <script>
-        const team = [{
-                name: "Aakash Sharma",
-                photo: "aakash.jpg",
-                facebook: "https://www.facebook.com/profile.php?id=100008554054285",
-                instagram: "https://www.instagram.com/9267aakashsharma/",
-                linkedin: "https://www.linkedin.com/in/aakash-sharma-7b271a167"
-            },
-            {
-                name: "Aarushi Saraswat",
-                photo: "aarushi.jpg",
-                facebook: "https://www.facebook.com/aarushi.saraswat.33",
-                instagram: "https://www.instagram.com/99_aarushi/",
-                linkedin: "linkedin.com/in/aarushi-saraswat"
-            },
-            {
-                name: "Dhruvil Shah",
-                photo: "dhruvil.jpg",
-                instagram: "https://www.instagram.com/dhruvil_shah_2000/",
-                linkedin: "https://www.linkedin.com/in/dhruvil-shah-5506b416b/"
-            },
-            {
-                name: "Ishan Chhabra",
-                photo: "ishan.jpg",
-                facebook: "https://www.facebook.com/ish2gud",
-                instagram: "https://www.instagram.com/chh_abracadabra/",
-                linkedin: "linkedin.com/in/ishan-chhabra"
-            },
-            {
-                name: "Janaswamy Samyukta",
-                photo: "samyukta.jpg",
-                facebook: "https://www.facebook.com/samyuktha.janaswamy",
-                instagram: "https://www.instagram.com/samyukthajanaswamy/",
-                linkedin: "linkedin.com/janaswamy-samyukta"
-            },
-            {
-                name: "Nithesh P",
-                photo: "nithesh.jpg",
-                linkedin: "https://www.linkedin.com/in/nithesh-p-474b95187"
-            },
-            {
-                name: "Rishika Sharma",
-                photo: "rishika.jpg",
-                facebook: "https://www.facebook.com/kiya.sen.31",
-                instagram: "https://www.instagram.com/_t_slash_/",
-            },
-            {
-                name: "Shrey Sachdeva",
-                photo: "shrey.jpg",
-                instagram: "https://www.instagram.com/shrey_sachdeva",
-                linkedin: "https://www.linkedin.com/in/shrey-sachdeva-7a456870"
-            },
-            {
-                name: "Sriram Kailasam",
-                photo: "sriram.jpg",
-                facebook: "https://www.facebook.com/sriram.iyer.182",
-                instagram: "https://www.instagram.com/sriram_kailasam/",
-                linkedin: "https://www.linkedin.com/in/sriram-kailasam"
-            },
-            {
-                name: "Vanshika Bhojnagarwala",
-                photo: "vanshikabhojnagarwala.jpg",
-                facebook: "https://m.facebook.com/vanshika.bhojnagarwala.9",
-                instagram: "https://www.instagram.com/vanshika_703/",
-                linkedin: "https://www.linkedin.com/in/vanshika-bhojnagarwala-3308b4183"
-            },
-            {
-                name: "Vanshika Jalan",
-                photo: "vanshikajalan.jpg",
-                instagram: "https://www.instagram.com/ajeebnajeeb_",
-                linkedin: "https://www.linkedin.com/in/vanshikajalan26"
-            }
-        ]
-
-        team.forEach(member => {
-
-            const facebook = member.facebook != undefined ?
-                `<a href="${member.facebook}"><span class="kz-icon kz-icon-round kz-icon-facebook"></span></a>` :
-                "";
-            const instagram = member.instagram != undefined ?
-                `<a href="${member.instagram}"><span class="kz-icon kz-icon-instagram"></span></a>` : "";
-            const linkedin = member.linkedin != undefined ?
-                `<a href="${member.linkedin}"><span class="kz-icon kz-icon-linkedin"></span></a>` : "";
-
-            const snippet = `
-            <div class="kz-team-member col-12 col-md-4 col-lg-3">
-                    <img src="res/img/developers/${member.photo}" />
-                    <div class="kz-content text-center">
-                        <div>
-                            <p>${member.name}</p>
-                            <div class="kz-social">
-                                ${facebook}
-                                ${instagram}
-                                ${linkedin}
-                            </div>
+    <section class="about-srm kz-section">
+        <h2 class="kz-title-bold">About SRM</h2>
+        <div class="container">
+            <div class="row about-srm-card no-gutters">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 about-srm-card-img">
+                    <img src="res/img/gallery/srmist.jpg" />
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 about-srm-card-content">
+                    <p>SRM Institute of Science and Technology (formerly known as SRM University) is one of the top
+                        ranking universities in India with over 38,000 students and more than 2600 faculty across all
+                        the campus, offering a wide range of undergraduate, postgraduate and doctoral programs in
+                        Engineering, Management, Medicine and Health sciences, and Science and Humanities.</p>
+                    <div class="about-srm-card-content-footer text-center">
+                        <a href="https://www.srmist.edu.in/" target="_blank">VISIT US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="cnv-card">
+                        <img src="res/img/gallery/entdirector.jpg" />
+                        <div class="cnv-card-content">
+                            <h5>Dr. C. Muthamizhchelvan</h5>
+                            <p>Director, Faculty of Engineering & Technology</p>
+                            <a href="mailto:director.et@srmist.edu.in" target="_blank"><i
+                                    class="fas fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>
-            `
-
-            const node = htmlToElement(snippet)
-            document.querySelector('.kz-section-team').appendChild(node)
-        })
-
-        function htmlToElement(html) {
-            var template = document.createElement('template');
-            html = html.trim(); // Never return a text node of whitespace as the result
-            template.innerHTML = html;
-            return template.content.firstChild;
-        }
-    </script>
+                <div class="col-md-4 col-sm-12">
+                    <div class="cnv-card">
+                        <img src="res/img/gallery/teamprincipal.jpg" />
+                        <div class="cnv-card-content">
+                            <h5>Dr. T. Rajasekaran</h5>
+                            <p>Team Principal, Professor and Deputy H.O.D(M.E.)</p>
+                            <a href="mailto:rajasekaran.t@ktr.srmuniv.ac.in" target="_blank"><i
+                                    class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="cnv-card">
+                        <img src="res/img/gallery/teamfaculty.jpg" />
+                        <div class="cnv-card-content">
+                            <h5>Mr. S. Arul Kumar</h5>
+                            <p>Team Faculty, Assistant Professor (M.E)</p>
+                            <a href="mailto:arulkumar.s@ktr.srmuniv.ac.in" target="_blank"><i
+                                    class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="kz-footer">
         <div class="container-fluid">
             <div class="row text-center">
@@ -206,14 +147,13 @@
         </div>
         <div class="copyright">
             <p>&#9400;&nbsp;Copyright The Elecruisers. All rights reserved.</p>
-            <p>crafted with <i class="fas fa-heart"></i> by <a href="https://www.srmkzilla.net"
-                    target="_blank">SRMKZILLA
+            <p>crafted with <i class="fas fa-heart"></i> by <a href="devs.html">SRMKZILLA
                 </a><span>🤟</span>2019
             </p>
         </div>
     </footer>
-
     <script src="res/main.js" async defer></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -223,6 +163,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
     <script>
         function loading() {
             var loader = document.getElementById('loader');
