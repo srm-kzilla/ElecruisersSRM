@@ -92,21 +92,17 @@ nav {
     .nav-link {
         font-size: 16px;
     }
-
     .navbar-nav li {
         padding: 0px;
     }
-
     .navbar-brand span {
         font-size: 12px !important;
         padding: 0px 5px;
     }
-
     .navbar-brand img {
         height: 30px !important;
         width: 30px !important;
     }
-
     #loader video {
         height: 100vh !important;
         width: 100%;
@@ -142,7 +138,6 @@ nav {
         letter-spacing: 4px;
         margin-bottom: 32px;
     }
-
     .kz-title-bold::after {
         width: 46px;
     }
@@ -241,7 +236,6 @@ nav {
 }
 
 
-
 /* <<<<<index.html>>>>>> */
 
 
@@ -259,10 +253,14 @@ nav {
 }
 
 .headbar {
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     padding: 16px;
     display: flex;
     align-items: center;
+    z-index: 999;
 }
 
 .headbar .kz-drawer {
@@ -353,29 +351,27 @@ nav {
     .headbar h2 {
         font-size: 0.975rem;
     }
-
     .headbar p.kz-current-section {
         font-size: 0.7rem;
         margin-left: 5px;
     }
-
     .headbar img {
         margin-left: 5px;
         width: 18px;
         height: 18px;
     }
-
     .kz-drawer img {
         margin-left: 5px;
     }
-
     .headbar .kz-drawer a {
         font-size: 0.7rem;
     }
-
     .headbar .kz-drawer.active {
         padding-left: 5px;
         padding-right: 5px;
+    }
+    .headbar .kz-drawer a:not(:nth-child(1)) {
+        margin-left: 10px;
     }
 }
 
@@ -461,7 +457,6 @@ nav {
         width: 100%;
         height: 60vh;
     }
-
     .kz-skewbg {
         height: 70vh;
     }
@@ -528,29 +523,50 @@ div.coming_soon {
     height: auto;
 }
 
+.sponsers-carousel {
+    height: 300px;
+}
+
+.sponser-img {
+    width: auto !important;
+    height: 100px !important;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
 @media(max-width:576px) {
     .kz-section-vision-content p {
         font-size: 15px;
     }
-
     .kz-sponsor-image img {
         width: 100px;
         height: 100px;
     }
-
     .kz-section-vision .container {
         padding: 0;
         margin: 0;
     }
-
     .coming_soon button {
         margin-top: 0px;
         padding: 10px;
     }
-
     .coming_soon img {
         padding: 20px 0px;
         border-radius: 5px !important;
+    }
+    .sponser-img {
+        width: auto !important;
+        height: 45px !important;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: middle;
+        margin-bottom: 0px;
+    }
+    .sponsers-carousel {
+        height: 100px;
     }
 }
 
@@ -752,12 +768,10 @@ div.coming_soon {
     .kz-footer-nav {
         margin-bottom: 0px;
     }
-
     .kz-footer-nav a {
         padding-left: 0px;
         padding-right: 0px;
     }
-
     .copyright {
         width: 100%;
         padding: 0px;
@@ -861,26 +875,28 @@ div.coming_soon {
     animation-timing-function: ease-in-out;
 }
 
+
 /* Safari 4.0 - 8.0 */
+
 @-webkit-keyframes tanim1anim1 {
     0% {
         right: 0;
         bottom: -30%;
     }
-
     100% {
         right: 0;
         bottom: 100%;
     }
 }
 
+
 /* Standard syntax */
+
 @keyframes tanim1anim1 {
     0% {
         right: 0;
         bottom: -10%;
     }
-
     100% {
         right: 0;
         bottom: 100%;
@@ -901,26 +917,28 @@ div.coming_soon {
     animation-timing-function: ease-in-out;
 }
 
+
 /* Safari 4.0 - 8.0 */
+
 @-webkit-keyframes tanim2anim2 {
     0% {
         right: 0;
         top: -10%;
     }
-
     100% {
         right: 0;
         top: 100%;
     }
 }
 
+
 /* Standard syntax */
+
 @keyframes tanim2anim2 {
     0% {
         right: 0;
         top: -10%;
     }
-
     100% {
         right: 0;
         top: 100%;
@@ -933,36 +951,29 @@ div.coming_soon {
         margin-left: 5px !important;
         margin-right: 5px !important;
     }
-
     .team-card-image {
         margin-right: auto;
         margin-left: auto;
         border: none;
     }
-
     .team-card-image img {
         width: 30%;
     }
-
     .team-card-link {
         width: 100%;
     }
-
     .team-card-content p {
         padding: 10px 10px;
         font-size: 0.8rem;
         opacity: 0.7;
     }
-
     .team-card-content {
         padding-bottom: 20px;
     }
-
     .writeus {
         padding-left: 20px;
         padding-right: 20px;
     }
-
     .car_animation img {
         height: 150px;
         width: 70px;
@@ -1213,53 +1224,42 @@ div.coming_soon {
     .car-outer {
         height: 60vh;
     }
-
     .car-left {
         height: 60vh;
     }
-
     .car-right {
         height: 60vh;
     }
-
     .circle-left,
     .circle-right {
         height: 100px;
         width: 100px;
     }
-
     .car-photo img {
         height: 40%;
         width: 50%;
     }
-
     .car-left-icon img {
         height: 70px;
         width: 70px;
     }
-
     .car-left-title h1 {
         padding: 10px;
         font-size: 22px;
     }
-
     .specs {
         padding: 5px;
         padding-left: 10px;
     }
-
     .specs h6 {
         font-size: 10px;
     }
-
     .specs h3 {
         font-size: 12px;
     }
-
     .car-left-footer {
         height: 5vh;
     }
-
     .car-left-footer p {
         font-size: 12px;
         padding: 5px;
@@ -1271,53 +1271,42 @@ div.coming_soon {
         margin: 20px;
         height: 60vh;
     }
-
     .car-left {
         height: 60vh;
     }
-
     .car-right {
         height: 60vh;
     }
-
     .circle-left,
     .circle-right {
         height: 100px;
         width: 100px;
     }
-
     .car-photo img {
         height: 40%;
         width: 50%;
     }
-
     .car-left-icon img {
         height: 70px;
         width: 70px;
     }
-
     .car-left-title h1 {
         padding: 10px;
         font-size: 22px;
     }
-
     .specs {
         padding: 0px;
         padding-left: 10px;
     }
-
     .specs h6 {
         font-size: 8px;
     }
-
     .specs h3 {
         font-size: 12px;
     }
-
     .car-left-footer {
         height: 5vh;
     }
-
     .car-left-footer p {
         font-size: 12px;
         padding: 5px;
@@ -1415,7 +1404,6 @@ div.coming_soon {
     margin-top: 10px;
 }
 
-
 .about-intro {
     display: inline-block;
     background-color: #fff;
@@ -1449,13 +1437,11 @@ div.coming_soon {
         margin-right: 30px;
         margin-left: 80px;
     }
-
     .car-description {
         text-align: center;
         margin-right: 30px;
         font-size: 12px;
     }
-
     #toggle-about,
     #toggle-specs {
         width: 85vw;
@@ -1465,14 +1451,12 @@ div.coming_soon {
         border-radius: 3px;
         font-size: 12px;
     }
-
     .toggle {
         padding: 8px 20px 20px 20px;
         width: 85vw;
         margin: 0px 50px 0px 30px;
         font-size: 10px;
     }
-
     .col {
         border-radius: 1px;
     }
@@ -1485,18 +1469,15 @@ div.coming_soon {
         height: 400px !important;
         width: auto;
     }
-
     .car-header {
         margin-left: 30px;
         text-align: left;
     }
-
     .car-description {
         text-align: left;
         margin-left: 30px;
         font-size: 13px;
     }
-
     #toggle-about,
     #toggle-specs {
         width: 82vw;
@@ -1506,14 +1487,12 @@ div.coming_soon {
         border-radius: 3px;
         font-size: 12px;
     }
-
     .toggle {
         padding: 8px 20px 20px 20px;
         width: 82vw;
         margin: 0px 100px 0px 40px;
         font-size: 10px;
     }
-
     .col {
         border-radius: 1px;
     }
@@ -1593,18 +1572,15 @@ div.coming_soon {
         padding-top: 50px;
         font-size: 26px;
     }
-
     .technical-header {
         margin: 40px 0px 0px 0px;
         width: 100%;
         height: 100px;
         font-size: 20px;
     }
-
     .subtitle {
         margin: 30px 0px 40px 0px;
     }
-
     .support-description {
         margin-top: 30px;
         padding-top: 10px;
@@ -1612,7 +1588,6 @@ div.coming_soon {
         padding-left: 50px;
         padding-right: 50px;
     }
-
     .support-title {
         font-size: 26px;
         font-weight: bold;
@@ -1620,16 +1595,13 @@ div.coming_soon {
         padding-top: 40px;
         line-height: 100%;
     }
-
     .illustration {
         height: 150px !important;
         width: auto;
     }
-
     .financial-support-header {
         font-size: 26px;
     }
-
     .finanical-support-description {
         margin: 20px 60px 0px 60px;
     }
@@ -1642,19 +1614,16 @@ div.coming_soon {
         padding-top: 50px;
         font-size: 30px;
     }
-
     .technical-header {
         margin: 40px 0px 0px 0px;
         width: 100%;
         height: 180px;
         font-size: 28px;
     }
-
     .support-description {
         margin-top: 30px;
         padding: 70px 50px 10px 50px;
     }
-
     .support-title {
         font-size: 30px;
         font-weight: bold;
@@ -1662,22 +1631,24 @@ div.coming_soon {
         padding-top: 0px;
         line-height: 100%;
     }
-
     .support-subtitle {
         padding-bottom: 30px;
     }
-
     .financial-support-header {
         font-size: 30px;
     }
-
     .finanical-support-description {
         margin: 20px 100px 0px 100px;
     }
 }
 
+
 /* --------------------------------------------- */
+
+
 /* ------------ Institute.html CSS ------------- */
+
+
 /* --------------------------------------------- */
 
 .about-srm-card {
@@ -1814,11 +1785,9 @@ div.coming_soon {
         margin: 50px 0px;
         height: 450px;
     }
-
     .about-srm-card-content {
         padding: 15px 10px !important;
     }
-
     .about-srm-card-content p {
         margin-top: 0px;
         font-size: 14px;
@@ -1826,16 +1795,13 @@ div.coming_soon {
         word-spacing: normal;
         color: #000;
     }
-
     .about-srm {
         padding: 0px 30px;
     }
-
     .cnv-card-content a {
         font-size: 28px;
         top: -48%;
     }
-
     .about-srm-card-img img {
         border-bottom-left-radius: 0px;
     }
